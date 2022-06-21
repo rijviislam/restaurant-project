@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Roboto Slab', serif;
 }
 
 a {
@@ -27,14 +28,19 @@ img {
 
 .logo {
     font-weight: bold;
-    font-size: 2rem;
+    font-size: 1.7rem;
     color: #100D0D;
 }
 
 .navlist {
-    padding: 0 2rem;
+    padding: 15px 20px;
     color: #06090C;
-    font-size: 1.3rem;
+    font-size: 1.2rem;
+}
+
+.navlist:hover {
+    background-color: #9e8679;
+    border-radius: 10px;
 }
 
 section {
@@ -74,8 +80,8 @@ section {
 
 .section__details {
     margin-top: 20px;
-    font-size: 30px;
-    font-weight: bold;
+    font-size: 20px;
+    font-weight: 500;
     color: #06090C;
 }
 
@@ -95,12 +101,13 @@ section {
 }
 
 .features__section {
-    padding: 5rem 0;
+    /* padding: 5rem 0; */
+    padding-top: 2rem;
     background-color: #D0BAAD;
 }
 
 .features__section .section__header {
-    font-size: 3rem;
+    font-size: 2.5rem;
     padding: 20px 0;
     text-align: center;
 }
@@ -131,12 +138,13 @@ section {
 
 .btn__two {
     width: 24%;
-    padding: 10px 0;
+    padding: 1rem 0;
     margin: 1rem 0;
+
 }
 
 .ourmenu__section {
-    padding: 5rem;
+    padding: 0 5rem;
     background-color: #D0BAAD;
 }
 
@@ -148,7 +156,7 @@ section {
 }
 
 .ourmenu__section .section__header {
-    font-size: 3rem;
+    font-size: 2.5rem;
     padding: 20px 0;
     text-align: center;
 }
@@ -177,7 +185,7 @@ section {
 }
 
 .about--me--section .section__header {
-    font-size: 3rem;
+    font-size: 2.5rem;
     padding: 20px 0;
     text-align: center;
 }
@@ -196,22 +204,22 @@ section {
 }
 
 .about--me--section .about__details {
-    width: 25%;
-    padding: 2rem 0;
+    width: 40%;
     text-align: center;
 }
 
 .my__name {
     font-size: 1.5rem;
+    margin-top: 10px;
 }
 
 .contact--me--section {
-    padding: 5rem;
+    padding: 0 5rem;
     background-color: #D0BAAD;
 }
 
 .contact--me--section .section__header {
-    font-size: 3rem;
+    font-size: 2.5rem;
     padding: 20px 0;
     text-align: center;
 }
@@ -229,7 +237,7 @@ section {
 }
 
 .input__field .contact__input {
-    padding: 20px 50px;
+    padding: 15px 45px;
     font-size: 15px;
     border: 3px solid #9e8679;
     border-radius: 10px;
@@ -239,29 +247,37 @@ section {
 .contact__input {
     margin: 5px 0;
     padding: 20px 50px;
-  
+
+}
+
+.input__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .input__field .textarea {
     margin: 20px 0;
+    width: 591px
 }
 
 .textarea {
-    font-size: 20px;
-    padding: 3rem 0;
+    font-size: 15px;
+    padding: 3rem 3rem;
     border: 3px solid #9e8679;
     border-radius: 10px;
     outline: none;
 }
 
 .input__field .contact__btn {
+    width: 120px;
     font-size: 1rem;
-    margin-left: 1rem;
+    /* margin-left: 1rem; */
 }
 
 .all__contacts .contact__list {
     width: 50%;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     text-align: center;
 }
 
@@ -287,7 +303,6 @@ section {
 
 .map__section {
     width: 100%;
-    padding: 0 5rem;
     background-color: #D0BAAD;
 }
 
@@ -299,8 +314,6 @@ section {
 
 .order__section {
     width: 100%;
-    height: 55vh;
-    /* padding: 0 5rem; */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -313,12 +326,12 @@ section {
     top: 0;
     left: 0;
     width: 100%;
-    height: 450px;
-    /* padding: 0 5rem; */
-    background: url(./img/sectionywo.jpg) no-repeat fixed center;
+    height: 300px;
+    text-align: center;
+    background: url(./img/footerlast.jpg) no-repeat fixed center;
     background-size: cover;
     z-index: -10;
-    filter: blur(2px);
+    /* filter: blur(2px); */
 }
 
 .section__header {
@@ -338,18 +351,17 @@ section {
 }
 
 .order__button {
-    margin: 1rem 4rem;
-    padding: 1rem 4rem;
-    outline: none;
+    margin: 1rem 0;
+    padding: 1rem 2rem;
+    border: none;
     background-color: #eeb91b;
     color: #06090C;
-    border: #100D0D;
     border-radius: 10px;
 }
 
 .bottom {
-    background-color: #06090C;
-    color: #FFFFFC;
+    background-color: #eeb91b;
+    color: #06090C;
 }
 
 .order__button:hover {
@@ -357,20 +369,31 @@ section {
     color: #FFFFFC;
 }
 
-.bottom:hover {
-    background-color: #eeb91b;
-    color: #06090C;
-}
+/* .bottom:hover {
+    background-color: #06090C;
+    color: #FFFFFC;
+} */
 
 footer {
     background-color: #D0BAAD;
 }
-.footer__text{
+
+.footer__text {
     width: 100%;
-    height: 80px;
-    font-size: 20px;
-    font-weight:bold;
+    height: 40px;
+    font-size: 15px;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.contact__link {
+    display: flex;
+    justify-content: center;
+}
+
+.link__icon {
+    padding: 0 10px;
+    font-size: 25px;
+    color: #06090C;
 }

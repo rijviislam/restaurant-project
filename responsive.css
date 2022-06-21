@@ -1,0 +1,23 @@
+/* @media ( max-width:500px ) {
+    .header__section {
+        display: none;
+    }
+}
+@media ( max-width:300px ) (min-width:500px) {
+    .landing__section {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .section__details {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .features__section {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .ourmenu__section {
+        display: flex;
+        flex-wrap: wrap;
+    }
+} */
