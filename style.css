@@ -10,7 +10,7 @@ a {
 }
 
 img {
-    height: 100px;
+    height: 100%;
 }
 
 .header__section {
@@ -32,16 +32,86 @@ img {
     color: #100D0D;
 }
 
-.navlist {
-    padding: 15px 20px;
-    color: #06090C;
-    font-size: 1.2rem;
+.navbar {
+    position: relative;
+    width: 600px;
+    height: 50px;
 }
 
-.navlist:hover {
-    background-color: #9e8679;
-    border-radius: 10px;
+.navlist {
+    font-size: 1rem;
+    text-transform: uppercase;
+    color: #ffff;
+    line-height: 50px;
+    position: relative;
+    z-index: 1;
+    display: inline-block;
+    text-align: center;
+    /* padding: 1rem 2rem;
+    color: #06090C;
+    font-size: 1.2rem; */
 }
+
+.navbar .animation {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 0;
+    background: #b8a092;
+    border-radius: 10px;
+    transition: all 0.6s ease 0s;
+}
+
+a:nth-child(1) {
+    width: 100px;
+}
+
+.nav__container .start__home,a:nth-child(1):hover~.animation {
+    width: 100px;
+    left: 0;
+}
+
+a:nth-child(2) {
+    width: 110px;
+}
+
+.nav__container .start__about,a:nth-child(2):hover~.animation {
+    width: 110px;
+    left: 100px;
+}
+
+a:nth-child(3) {
+    width: 100px;
+}
+
+.nav__container .start__services,a:nth-child(3):hover~.animation {
+    width: 100px;
+    left: 210px;
+}
+
+a:nth-child(4) {
+    width: 140px;
+}
+
+.nav__container .start__contact,a:nth-child(4):hover~.animation {
+    width: 140px;
+    left: 320px;
+}
+
+a:nth-child(5) {
+    width: 120px;
+}
+
+.nav__container .start__booking,a:nth-child(5):hover~.animation {
+    width: 120px;
+    left: 470px;
+}
+
+/* .navlist:hover {
+    background-color: #9e8679;
+    border-radius: 1rem;
+} */
 
 section {
     width: 100%;
@@ -64,7 +134,7 @@ section {
     top: 0;
     left: 0;
     width: 100%;
-    height: 100vh;
+    height: 100%;
     background: url(./img/second.jpg) no-repeat fixed center;
     background-size: cover;
     z-index: -10;
@@ -79,8 +149,8 @@ section {
 }
 
 .section__details {
-    margin-top: 20px;
-    font-size: 20px;
+    margin-top: 1.5rem;
+    font-size: 1.2rem;
     font-weight: 500;
     color: #06090C;
 }
@@ -92,7 +162,7 @@ section {
     border: none;
     background-color: #eeb91b;
     color: #333;
-    border-radius: 10px;
+    border-radius: 1rem;
 }
 
 .btn:hover {
@@ -108,7 +178,7 @@ section {
 
 .features__section .section__header {
     font-size: 2.5rem;
-    padding: 20px 0;
+    padding: 1.5rem 0;
     text-align: center;
 }
 
@@ -133,7 +203,7 @@ section {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    border-radius: 10px;
+    border-radius: 1rem;
 }
 
 .btn__two {
@@ -157,13 +227,13 @@ section {
 
 .ourmenu__section .section__header {
     font-size: 2.5rem;
-    padding: 20px 0;
+    padding: 1.5rem 0;
     text-align: center;
 }
 
 .ourmenu__section .item__image {
     width: 100%;
-    height: 180px;
+    height: 11.25rem;
 }
 
 .ourmenu__section .item__image img {
@@ -173,7 +243,7 @@ section {
 }
 
 .section__content .detalis {
-    padding: 20px;
+    padding: 1.5rem;
     background-color: #333;
     color: #FFFFFC;
     text-align: center;
@@ -186,7 +256,7 @@ section {
 
 .about--me--section .section__header {
     font-size: 2.5rem;
-    padding: 20px 0;
+    padding: 1.5rem 0;
     text-align: center;
 }
 
@@ -198,9 +268,9 @@ section {
 }
 
 .about--me--section .details .image img {
-    width: 150px;
-    height: 120px;
-    border-radius: 50px;
+    width: 9.75rem;
+    height: 7.5rem;
+    border-radius: 3.75rem;
 }
 
 .about--me--section .about__details {
@@ -210,7 +280,7 @@ section {
 
 .my__name {
     font-size: 1.5rem;
-    margin-top: 10px;
+    margin-top: 0.625rem;
 }
 
 .contact--me--section {
@@ -220,7 +290,7 @@ section {
 
 .contact--me--section .section__header {
     font-size: 2.5rem;
-    padding: 20px 0;
+    padding: 1.25rem 0;
     text-align: center;
 }
 
@@ -233,20 +303,20 @@ section {
 
 .contact__form {
     width: 50%;
-    margin-top: 20px;
+    margin-top: 1.25rem;
 }
 
 .input__field .contact__input {
-    padding: 15px 45px;
-    font-size: 15px;
+    padding: 0.938rem 2.813rem;
+    font-size: 0.938rem;
     border: 3px solid #9e8679;
-    border-radius: 10px;
+    border-radius: 0.625;
     outline: none;
 }
 
 .contact__input {
-    margin: 5px 0;
-    padding: 20px 50px;
+    margin: 0.313rem 0;
+    padding: 1.25rem 3.25rem;
 
 }
 
@@ -257,12 +327,12 @@ section {
 }
 
 .input__field .textarea {
-    margin: 20px 0;
-    width: 591px
+    margin: 1.25rem 0;
+    width: 37rem;
 }
 
 .textarea {
-    font-size: 15px;
+    font-size: 0.938rem;
     padding: 3rem 3rem;
     border: 3px solid #9e8679;
     border-radius: 10px;
@@ -270,7 +340,7 @@ section {
 }
 
 .input__field .contact__btn {
-    width: 120px;
+    width: 7.5rem;
     font-size: 1rem;
     /* margin-left: 1rem; */
 }
@@ -282,7 +352,7 @@ section {
 }
 
 .contact__list .contact__item {
-    padding: 10px 0;
+    padding: 0.625rem 0;
 }
 
 .contact__item:nth-child(1) {
@@ -336,7 +406,7 @@ section {
 
 .section__header {
     text-align: center;
-    font-size: 40px;
+    font-size: 2.5rem;
     font-weight: bold;
     color: #FFFFFC;
 }
@@ -381,7 +451,7 @@ footer {
 .footer__text {
     width: 100%;
     height: 40px;
-    font-size: 15px;
+    font-size: 0.938rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -393,7 +463,7 @@ footer {
 }
 
 .link__icon {
-    padding: 0 10px;
-    font-size: 25px;
+    padding: 0 0.625rem;
+    font-size: 1.563rem;
     color: #06090C;
 }
